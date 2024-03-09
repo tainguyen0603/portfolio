@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>TaiNguyen - Portfolio</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <ul>
+                <li><a href="https://github.com/tainguyen0603" target="_blank"><i class="fa-brands fa-github"></i>Github</a></li>
+            </ul>
+            <h1>Nguyen Tran Dac Tai </h1>
+            <img src="img/picture.jpg" alt="" class="profile-image">
+            <h2>Hi, I'm Front-end Developer</h2>
+            
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>   Continuously learn and improve programming knowledge to develop professional skills </p>
+                    <p>   Become a professional programmer</p>
+                    <p>   Proficient in using coding languages</p>
+                    <p>   Cultivate presentation skills, group work, and individual project work</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <h3>Programing Languages and Tools:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Java</li>
+                        <li>MySQL</li>
+                        <li>ReactJS</li>
+                    </ul>
+                </section>
+
+                <section id="language">
+                    <h2>Languages</h2>
+                    <p>English</p>
+                </section>
+                
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>SAI GON UNIVERSITY (2018 - now)</p>
+                </section>
+                
+            </div>
+
+            <div class="right-column">
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="project-card">
+                        <h3>Light Store</h3>
+                        <p>Programing languages: JavaScript, MySQL, HTML, CSS</p>
+                        <p>Our online Light Store project is a flexible and interactive ecommerce system,  
+                            Built on the NetBean and MySQL we are committed to providing a 
+                            smooth and efficient online learning experience.</p>
+                        <a href="https://github.com/tainguyen0603/lightstore" target="_blank">View Project</a>
+                    </div>        
+
+                    <div class="project-card">
+                        <h3>Fast Food restaurant management</h3>
+                        <p>Programing languages: JavaSwing</p>
+                        <p>This software is a cutting-edge solution designed to streamline the management of fast food establishments, enabling efficient operations and enhanced customer service.
+                         With it, fast food businesses can automate various aspects of their operations, from order management to inventory control, to optimize performance and drive growth.</p>
+                        <a target="_blank">View Project</a>
+                    </div>                     
+                </section>
+            </div>
+            
+        </div>
+        <button id="back-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        <footer>
+        <ul>
+            <li><i class="fa-regular fa-envelope"></i>jackytran2000@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i>+84 837219388</li>
+        </ul>
+    </footer>
+    </div>
+
+  
+<script>
+    function scrollToTop() {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+window.onscroll = function () {
+    showBackToTopButton();
+};
+
+function showBackToTopButton() {
+    var button = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+</script>
+</body>
+</html>
